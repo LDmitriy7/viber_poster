@@ -3,6 +3,7 @@
 
 env.*
 data/*
+!data/README.md
 
 # IntelliJ project files
 .idea

@@ -9,6 +9,7 @@ import config
 def download_photo(url: str, path: str):
     response = requests.get(url)
     response.raise_for_status()
+
     with open(path, 'wb') as f:
         f.write(response.content)
 
