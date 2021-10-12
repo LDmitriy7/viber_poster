@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import toml
 
 env = toml.load('env.toml')
