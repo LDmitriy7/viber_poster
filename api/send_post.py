@@ -8,7 +8,8 @@ def open_chat(title: str):
     pag.hotkey('ctrl', 'f')
     pag.sleep(config.Pauses.MIN)
 
-    keyboard.press('esc')  # clear
+    pag.press('esc')
+    # keyboard.press('esc')  # clear
     pag.sleep(config.Pauses.MIN)
 
     pag.hotkey('ctrl', 'f')
