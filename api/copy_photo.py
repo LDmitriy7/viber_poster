@@ -44,21 +44,6 @@ def copy_photo_to_clipboard(url: str):
     else:
         _copy_photo_to_linux_clipboard(config.Photo.DOWNLOAD_PATH)
 
-# def open_chat(title: str):
-#     pag.hotkey('ctrl', 'f')
-#     pag.sleep(MIN_PAUSE)
-#
-#     keyboard.press('esc')  # clear
-#     pag.sleep(MIN_PAUSE)
-#
-#     pag.hotkey('ctrl', 'f')
-#     pag.sleep(MIN_PAUSE)
-#
-#     keyboard.write(title)
-#     pag.sleep(MIN_PAUSE)
-#
-#     pag.click(SEARCH_RESULT_POSITION)
-#     pag.sleep(MIN_PAUSE)
 #
 #
 # def send_photo(photo_url: str):
