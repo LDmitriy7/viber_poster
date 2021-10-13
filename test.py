@@ -1,3 +1,4 @@
+import random
 import time
 
 import api
@@ -8,7 +9,13 @@ def test1():
 
     for city in ['kiev', 'odessa', 'kharkov', 'dnepr', 'lviv']:
         api.open_chat(f'test job in {city}')
-        api.send_photo('https://i.stack.imgur.com/blfaC.png')
+        photo_url = random.choice([
+            'https://i.stack.imgur.com/n3Hbx.jpg',
+            'https://i.stack.imgur.com/blfaC.png',
+            'https://i.stack.imgur.com/ZSfFu.png',
+            'https://www.codegrepper.com/codeimages/how-to-import-keyboard-in-python.png',
+        ])
+        api.send_photo(photo_url)
 
 
 def test2():
