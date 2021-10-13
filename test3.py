@@ -1,3 +1,3 @@
-import keyboard
+import pyperclip
 
-keyboard.write('123')
+pyperclip.copy('12131')
