@@ -34,7 +34,13 @@ def copy_photo_to_clipboard(url: str):
         _send_photo_to_windows_clipboard(config.Photo.DOWNLOAD_PATH)
     else:
         _send_photo_to_linux_clipboard(config.Photo.DOWNLOAD_PATH)
-#
+
+
+# ===
+
+def copy_text_to_clipboard(text: str):
+    subprocess.run(('xclip', '-selection', 'c'), input=text.encode())
+
 #
 # def edit_caption(text: str):
 #     pag.press('up')
