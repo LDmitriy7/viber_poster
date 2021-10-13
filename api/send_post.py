@@ -17,7 +17,7 @@ def open_chat(title: str):
     pag.hotkey('ctrl', 'f')
     pag.sleep(config.Pauses.MIN)
 
-    # keyboard.write(title)
+    keyboard.write(title)
     pag.typewrite(title)
     pag.sleep(config.Pauses.MIN)
 
