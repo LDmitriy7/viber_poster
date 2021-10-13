@@ -17,5 +17,6 @@ class Pauses:
 class Positions:
     _data = env['Positions']
 
+    VIBER_WINDOW: list[int] = _data['VIBER_WINDOW']
     SEARCH_RESULT: list[int] = _data['SEARCH_RESULT']
     MSG_INPUT_FIELD: list[int] = _data['MSG_INPUT_FIELD']

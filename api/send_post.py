@@ -5,6 +5,9 @@ import config
 
 
 def open_chat(title: str):
+    pag.click(config.Positions.VIBER_WINDOW)
+    pag.sleep(config.Pauses.MIN)
+
     pag.hotkey('ctrl', 'f')
     pag.sleep(config.Pauses.MIN)
 
@@ -14,7 +17,8 @@ def open_chat(title: str):
     pag.hotkey('ctrl', 'f')
     pag.sleep(config.Pauses.MIN)
 
-    keyboard.write(title)
+    # keyboard.write(title)
+    pag.typewrite(title)
     pag.sleep(config.Pauses.MIN)
 
     pag.click(config.Positions.SEARCH_RESULT)
