@@ -10,7 +10,8 @@ class Photo:
 
 
 class Pauses:
-    MIN = 1  # 0.2 - error
+    # MIN = 1  # 0.2 - error
+    MIN = 0.5
 
 
 class Positions:
