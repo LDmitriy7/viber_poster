@@ -1,6 +1,7 @@
 import pyautogui as pag
-from .copy_to_clipboard import copy_photo_to_clipboard
+
 import config
+from .copy_to_clipboard import copy_photo_to_clipboard
 
 
 def open_chat(title: str):
@@ -36,7 +37,7 @@ def send_photo(photo_url: str):
     copy_photo_to_clipboard(photo_url)
     pag.sleep(config.Pauses.MIN)
 
-    pag.hotkey('ctrl', 'v')
+    pag.hotkey('ctrl', 'v', interval=0.15)
     pag.sleep(config.Pauses.MIN)
 
     pag.press('enter')
