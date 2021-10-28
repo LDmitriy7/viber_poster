@@ -9,5 +9,12 @@ def copy_photo_to_clipboard(url: str):
     subprocess.run(('xclip', '-selection', 'c', '-t', 'image/jpg', config.Photo.DOWNLOAD_PATH))
 
 
+def copy_photo_to_clipboard2(url: str):
+    import requests
+
+    response = requests.get(url)
+    subprocess.run(('xclip', '-selection', 'c', '-t', 'image/jpg'), input=response.content)
+
+
 def copy_text_to_clipboard(text: str):
     subprocess.run(('xclip', '-selection', 'c'), input=text.encode())
